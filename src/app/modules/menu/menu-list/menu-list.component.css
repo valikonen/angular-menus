@@ -1,0 +1,8 @@
+aside {
+    float: left;
+    width: 25%;
+}
+.main {
+    float: left;
+    width: 75%;
+}

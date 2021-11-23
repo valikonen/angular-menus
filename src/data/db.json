@@ -1,0 +1,40 @@
+{
+    "manicka": [
+        {
+            "text": "Cuketový krém s kokosovým krémem (bez lepku) 250 ml",
+            "price": 45,
+            "date": "23.11.2021"
+        },
+        {
+            "text": "Cuketový krém s kokosovým krémem (bez lepku) 450 ml",
+            "price": 68,
+            "date": "23.11.2021"
+        }
+    ],
+    "pivnice-ucapa": [
+        {
+            "text": "Grilovaný hermelín s brusinkovou omáčkou, vařené pažitkové brambory, salátek z rukoly, cherry rajčátek a krémového balsamica",
+            "price": 139,
+            "date": "23.11.2021"
+        },
+        {
+            "text": "Pečený moravský vrabec, bílé kysané zelí se slaninou, domácí bramborový knedlík, vídeňská cibulka",
+            "price": 155,
+            "date": "23.11.2021"
+        }
+    ],
+    "suzies": [
+        {
+            "title": "Pizza 1",
+            "text": "Formaggi /smetanové sugo, mozzarella, variace italských sýrů, šunka, cibule/",
+            "price": 125,
+            "date": "23.11.2021"
+        },
+        {
+            "title": "Pizza 2",
+            "text": "Chorizo /tomatové sugo, mozzarella, španělské Chorizo, jalapenos, slanina/",
+            "price": 135,
+            "date": "23.11.2021"
+        }
+    ]
+}
