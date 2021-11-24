@@ -30,7 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Run mock backend
 
 Go to:
-root/data and run:
+root/src/data and run:
 
 json-server --watch db.json
 
