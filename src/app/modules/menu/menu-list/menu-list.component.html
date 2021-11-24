@@ -1,8 +1,11 @@
 <aside>
     <p>23.11.2021</p>
 </aside>
+
 <div class="main">
-    <ng-container *ngFor="let item of menus">
-        <menu-item [menu]="item"></menu-item>
+    <ng-container *ngFor="let m of menus | async">
+        <ng-container *ngFor="let item of m">
+            <menu-item [menu]="item"></menu-item>
+        </ng-container>
     </ng-container>
 </div>

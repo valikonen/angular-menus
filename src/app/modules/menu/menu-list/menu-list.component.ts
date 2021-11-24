@@ -1,15 +1,17 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { forkJoin } from 'rxjs';
+import { ChangeDetectionStrategy, Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { forkJoin, Observable } from 'rxjs';
 import { IMenu } from '../menu.model';
 import { MenuService } from '../menu.service';
 
 @Component({
     templateUrl: './menu-list.component.html',
-    styleUrls: ['./menu-list.component.css']
+    styleUrls: ['./menu-list.component.css'],
+    encapsulation: ViewEncapsulation.Emulated,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MenuListComponent implements OnInit {
 
-    menus: IMenu[] = [];
+    menus!: Observable<[IMenu[], IMenu[], IMenu[]]>;
 
     constructor(private readonly menuService: MenuService) { }
 
@@ -17,14 +19,11 @@ export class MenuListComponent implements OnInit {
     ngOnInit(): void {
         this._getMenus();
     }
-
     private _getMenus(): void {
         const menicka = this.menuService.getData('manicka');
         const pivniceUcapa = this.menuService.getData('pivnice-ucapa');
         const suzies = this.menuService.getData('suzies');
 
-        forkJoin([menicka, pivniceUcapa, suzies]).subscribe(([res1, res2, res3]) => {
-            this.menus.push(...res1, ...res2, ...res3);
-        });
+        this.menus = forkJoin([menicka, pivniceUcapa, suzies]);
     }
 }
