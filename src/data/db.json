@@ -1,11 +1,13 @@
 {
     "manicka": [
         {
+            "title": "Cuketový",
             "text": "Cuketový krém s kokosovým krémem (bez lepku) 250 ml",
             "price": 45,
             "date": "23.11.2021"
         },
         {
+            "title": "Cuketový krém",
             "text": "Cuketový krém s kokosovým krémem (bez lepku) 450 ml",
             "price": 68,
             "date": "23.11.2021"
@@ -13,11 +15,13 @@
     ],
     "pivnice-ucapa": [
         {
+            "title": "Grilovaný",
             "text": "Grilovaný hermelín s brusinkovou omáčkou, vařené pažitkové brambory, salátek z rukoly, cherry rajčátek a krémového balsamica",
             "price": 139,
             "date": "23.11.2021"
         },
         {
+            "title": "Pečený",
             "text": "Pečený moravský vrabec, bílé kysané zelí se slaninou, domácí bramborový knedlík, vídeňská cibulka",
             "price": 155,
             "date": "23.11.2021"

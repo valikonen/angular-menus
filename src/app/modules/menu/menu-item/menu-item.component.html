@@ -1,4 +1,4 @@
 <section>
     <h1 *ngIf="_menu.title"> {{ _menu.title }}</h1>
-    <p>{{ _menu.text }}</p>
+    <p>{{ _menu.text }}</p> <i>{{ _menu.price | currency: 'Kč' }}</i>
 </section>
